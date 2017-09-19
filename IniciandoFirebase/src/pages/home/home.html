@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Dono:</ion-label>
+      <ion-input type="text" [(ngModel)]="carro.dono"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Modelo</ion-label>
+      <ion-select [(ngModel)]="carro.modelo">
+        <ion-option value="Gol">Gol</ion-option>
+        <ion-option value="Fusca">Fusca</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Multa</ion-label>
+      <ion-select [(ngModel)]="carro.multa">
+        <ion-option value="false">Não</ion-option>
+        <ion-option value="true">Sim</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <button ion-button (click)="cadastrar()">Cadastrar</button>
+    </ion-item>    
+ </ion-list>
+
+  <ion-list>
+  <h1> Listagem de Carros </h1>
+  <ion-item *ngFor="let carro of lista | async">
+    <h2>{{carro.modelo}}</h2>
+    <h3>{{carro.dono}}</h3>
+    <ion-note item-right *ngIf="carro.multa === 'true'">
+      Tem multa
+    </ion-note>  
+  </ion-item>
+  </ion-list>
+
+</ion-content>

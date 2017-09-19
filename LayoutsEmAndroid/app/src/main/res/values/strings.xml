@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">LayoutsEmAndroid</string>
+
+    <!-- Linear Layout -->
+    <string name="linear_layout">Linear Layout</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="absolute_layout">Absolute Layout</string>
+    <string name="frame_layout">Frame Layout</string>
+    <string name="table_layout">Table Layout</string>
+    <string name="title_activity_relative_layout">RelativeLayout</string>
+
+    <!-- Relative Layout -->
+    <string name="regresar">Voltar</string>
+    <string name="nombres">Nomes</string>
+    <string name="apellidos">Sobrenomes</string>
+    <string name="reminder">Lembres</string>
+    <string name="done">Finalizar</string>
+    <string name="title_activity_absolute_layout">AbsoluteLayout</string>
+
+    <!-- Frame Layout -->
+    <string name="prueba">teste</string>
+    <string name="title_activity_table_layout">TableLayout</string>
+    <string name="title_activity_grid_layout">GridLayout</string>
+    <string name="title_activity_linear_layout">LinearLayout</string>
+    <string name="title_activity_frame_layout">FrameLayout</string>
+    <string name="grid_layout">Grid Layout</string>
+</resources>

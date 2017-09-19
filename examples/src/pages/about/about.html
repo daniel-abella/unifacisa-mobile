@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Examples
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+  <ion-item>
+    Left Icon Button
+    <button ion-button full [navPush]="contactPage">
+      Contato
+    </button>
+    Aparecer Sheet
+    <button ion-button full (click)="mostrarActionList()">
+      Mostrar Action List
+    </button>
+    Mostrar Alerta
+    <button ion-button full (click)="mostrarAlert()">
+      Mostrar Alerta
+    </button>
+    Mostrar Alerta com Campo
+    <button ion-button full (click)="mostrarAlertaComCampo()">
+      Mostrar Alerta com Campo
+    </button>
+    Mostrar Alerta com CheckBox
+    <button ion-button full (click)="mostrarAlertaComCheckbox()">
+      Mostrar Alerta com Checkbox
+    </button>
+  </ion-item>
+</ion-list>
+
+</ion-content>
